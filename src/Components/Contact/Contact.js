@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faFacebook,
-  faTwitter,
-  faInstagram,
-  faLinkedin,
-  faYoutube,
-} from "@fortawesome/free-brands-svg-icons";
+  FaFacebook,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedin,
+  FaYoutube,
+} from "react-icons/fa";
 
 const Contact = () => {
   const [result, setResult] = useState("");
@@ -102,31 +101,31 @@ const Contact = () => {
               href="#!"
               className="rounded-full bg-transparent p-3 font-medium leading-normal text-gray-800 transition duration-150 ease-in-out focus:outline-none focus:ring-0"
             >
-              <FontAwesomeIcon icon={faFacebook} className="h-5 w-5" />
+              <FaFacebook className="h-5 w-5" />
             </a>
             <a
               href="#!"
               className="rounded-full bg-transparent p-3 font-medium leading-normal text-gray-800 transition duration-150 ease-in-out focus:outline-none focus:ring-0"
             >
-              <FontAwesomeIcon icon={faTwitter} className="h-5 w-5" />
+              <FaTwitter className="h-5 w-5" />
             </a>
             <a
               href="#!"
               className="rounded-full bg-transparent p-3 font-medium leading-normal text-gray-800 transition duration-150 ease-in-out focus:outline-none focus:ring-0"
             >
-              <FontAwesomeIcon icon={faInstagram} className="h-5 w-5" />
+              <FaInstagram className="h-5 w-5" />
             </a>
             <a
               href="#!"
               className="rounded-full bg-transparent p-3 font-medium leading-normal text-gray-800 transition duration-150 ease-in-out focus:outline-none focus:ring-0"
             >
-              <FontAwesomeIcon icon={faLinkedin} className="h-5 w-5" />
+              <FaLinkedin className="h-5 w-5" />
             </a>
             <a
               href="#!"
               className="rounded-full bg-transparent p-3 font-medium leading-normal text-gray-800 transition duration-150 ease-in-out focus:outline-none focus:ring-0"
             >
-              <FontAwesomeIcon icon={faYoutube} className="h-5 w-5" />
+              <FaYoutube className="h-5 w-5" />
             </a>
           </div>
         </div>
