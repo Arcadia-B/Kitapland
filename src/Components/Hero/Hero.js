@@ -16,10 +16,10 @@ const Hero = () => {
       <img src={hero} alt="" className="w-full h-auto object-cover" />
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="container mx-auto absolute inset-0 flex flex-col items-center justify-center text-center">
-        <h1 className="text-white text-4xl md:text-6xl font-bold z-10 mb-4">
+        <h1 className="text-white text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold z-10 mb-4">
           Kitapland'e Hoşgeldiniz!
         </h1>
-        <p className="text-white text-lg md:text-xl my-4 z-10 max-w-xl">
+        <p className="text-white text-xs md:text-sm lg:text-base xl:text-lg my-4 z-10 max-w-md">
           Keşfetmeye hazır mısınız? Kitapland, size en güzel kitapları sunuyor.
           Okumak istediğiniz her türden kitabı bulabilir, yeni dünyalara
           yolculuk yapabilirsiniz. Romandan bilim kurguya, tarihten biyografiye
@@ -28,9 +28,13 @@ const Hero = () => {
         </p>
         <div className="flex justify-center z-10">
           <Link to="/books" onClick={scrollToTop}>
-            <button className="bg-gray-800 text-white py-3 px-6 rounded-md hover:bg-gray-600 focus:outline-none transition duration-300 ease-in-out transform hover:scale-105">
+            <button className="bg-gray-800 text-white py-2 px-4 md:py-3 md:px-6 rounded-md text-xs md:text-sm hover:bg-gray-600 focus:outline-none transition duration-300 ease-in-out transform hover:scale-105">
               Kitapları Keşfet{" "}
-              <img src={arrow} alt="" className="inline-block h-4 m-2" />
+              <img
+                src={arrow}
+                alt=""
+                className="inline-block h-3 md:h-4 ml-2"
+              />
             </button>
           </Link>
         </div>
